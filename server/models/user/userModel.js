@@ -25,7 +25,8 @@ const userSchema = new mongoose.Schema({
     type: String,
   },  userProfile: { type: mongoose.Schema.Types.ObjectId, ref: 'UserProfile' },
   ActiveUser:{
-    type: Boolean,default:false
+    type: Boolean,default:false,
+    
   }
 
 },{timestamps: true});
